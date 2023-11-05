@@ -1,0 +1,31 @@
+#site-header {
+
+  width: 100%; 
+  height: 100%; 
+  background: white;
+  position: relative;
+
+  .logo-container {
+    float: left;
+    position: absolute;
+    top: 48px;
+    left: 160px;
+  }
+
+  .menu-container {
+    float: right;
+    width: 40px;
+    height: 10px;
+  }
+
+  .menu-button {
+    cursor: pointer;
+    position: absolute;
+    top: 61px;
+    right: 160px;
+  }
+
+  .main-menu {
+    display: none;
+  }
+}
