@@ -34,20 +34,20 @@
   left: 0;
   z-index: 999;
   background-color: #050A3A;
-}
 
-p {
-  color: #FFF;
-  font-family: $font1;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 1px;
-  float: left;
-  position: absolute;
-  top: 129px;
-  left: 160px;
+  p {
+    color: #FFF;
+    font-family: $font1;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1px;
+    float: left;
+    position: absolute;
+    top: 129px;
+    left: 160px;
+  }
 }
 
 .main-menu .close-element {
