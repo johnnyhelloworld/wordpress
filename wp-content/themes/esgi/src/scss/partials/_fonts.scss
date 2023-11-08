@@ -12,13 +12,6 @@ $font2: 'DM Sans', sans-serif;
     line-height: 1em;
 }
 
-@mixin Muli1-bold {
-    font-family: $font1;
-    font-size: rem(25);
-    line-height: 1em;
-    letter-spacing: 0.1em;
-}
-
 @mixin DM-sans1 {
     font-family: $font1;
     font-size: rem(25);
