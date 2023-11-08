@@ -4396,4 +4396,172 @@ template {
   padding-left: 3rem;
 }
 
+#site-header {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: relative;
+}
+
+.logo-container {
+  float: left;
+  position: absolute;
+  top: 48px;
+  left: 160px;
+}
+
+.menu-container {
+  float: right;
+  width: 40px;
+  height: 10px;
+}
+
+.menu-button {
+  cursor: pointer;
+  position: absolute;
+  top: 61px;
+  right: 160px;
+}
+
+.main-menu {
+  width: 100%;
+  height: 500px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #050A3A;
+}
+.main-menu p {
+  color: #FFF;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1px;
+  float: left;
+  position: absolute;
+  top: 129px;
+  left: 160px;
+}
+
+.main-menu .close-element {
+  position: absolute;
+  top: 61px;
+  right: 160px;
+}
+
+nav.main-menu .custom-menu {
+  position: absolute;
+  top: 115px;
+  right: 157px;
+}
+
+ul.custom-menu-list {
+  list-style: none;
+}
+
+.custom-menu-list a {
+  text-decoration: none;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+}
+
+.custom-menu-list li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #FFD0A8 0%, #FF4FC0 100%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.custom-menu-list li a:hover::after {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+#about-us {
+  max-width: 100%;
+  height: 100%;
+  background: white;
+  position: relative;
+  margin: 0 auto;
+}
+
+h2 {
+  width: 300px;
+  height: 79px;
+  top: 1422px;
+  left: 326.3157894737px;
+  padding: 0px, 3px, 0px, 0px;
+  position: absolute;
+  font-family: "Mulish", sans-serif;
+  font-size: 47.3684210526px;
+  font-weight: 600;
+  line-height: 79px;
+  letter-spacing: 3px;
+  text-align: left;
+}
+
+.about-us p {
+  position: absolute;
+  width: 687.2180451128px;
+  height: 126px;
+  top: 1517px;
+  left: 325.5639097744px;
+  font-family: "Mulish", sans-serif;
+  font-size: 19.5488721805px;
+  line-height: 42px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #8A8A8A;
+}
+
+.who-we-are img {
+  position: absolute;
+  width: 496.2406015038px;
+  height: 744.3609022556px;
+  top: 1782px;
+}
+
+.informations {
+  position: absolute;
+  width: 480.4511278195px;
+  height: 490.2255639098px;
+  top: 1850px;
+  left: 635.3383458647px;
+}
+.informations h3 {
+  width: 220.3007518797px;
+  height: 44.3609022556px;
+  padding: 0px, 1px, 0px, 0px;
+  font-family: "Mulish", sans-serif;
+  font-size: 35.3383458647px;
+  font-weight: 600;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.informations p {
+  color: #8A8A8A;
+  width: 479.6992481203px;
+  height: 56.3909774436px;
+  font-family: "Mulish", sans-serif;
+  font-size: 15.037593985px;
+  line-height: 28.5714285714px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
 /*# sourceMappingURL=style.css.map */

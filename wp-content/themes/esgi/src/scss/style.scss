@@ -1,6 +1,12 @@
 @import "vendor/normalize";
 @import "vendor/bootstrap-grid.min";
 
-@import 'partials/fonts';
+@import "vendor/normalize";
+@import "vendor/bootstrap-grid.min";
 
+@import "partials/fonts";
+@import "partials/functions";
+
+@import 'components/header';
 @import 'components/footer';
+@import 'components/template-about-us';
