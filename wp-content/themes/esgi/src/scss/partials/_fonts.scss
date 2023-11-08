@@ -3,3 +3,16 @@
 
 $font1: 'Mulish', sans-serif;
 $font2: 'DM Sans', sans-serif;
+
+
+@mixin Muli1 {
+    font-family: $font1;
+    font-size: rem(25);
+    line-height: 1em;
+}
+
+@mixin DM-sans1 {
+    font-family: $font1;
+    font-size: rem(25);
+    line-height: 1em;
+}
