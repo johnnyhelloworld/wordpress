@@ -1,0 +1,66 @@
+#our-services {
+    h2 {
+        width: 409px;
+        height: 79px;
+        top: 2904px;
+        left: dividebyonethird(157px);
+        padding: 0px, 3px, 0px, 0px;
+        position: absolute;
+        font-family: $font1;
+        font-size: dividebyonethird(63px);
+        font-weight: 600;
+        line-height: 79px;
+        letter-spacing: 3px;
+        text-align: left;
+    }
+}
+
+.our-services .image12 img {
+    position: absolute;
+    width: dividebyonethird(480px);
+    height: dividebyonethird(480px);
+    top: 3047px;
+}
+
+.our-services .image11 img{
+    position: absolute;
+    width: dividebyonethird(480px);
+    height: dividebyonethird(480px);
+    top: 3047px;
+    left: dividebyonethird(480px);
+}
+
+.private-parties p {
+    position: absolute;
+    width: dividebyonethird(242px);
+    height: 44px;
+    top: 3160px;
+    left: dividebyonethird(1079px);
+    font-family: $font1;
+    font-size: dividebyonethird(35px);
+    line-height: 41px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #050A3A;
+}
+
+// Underline for "Private Parties"
+.private-parties p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #FFD0A8 0%, #FF4FC0 100%);
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.our-services .image3 img{
+    position: absolute;
+    width: dividebyonethird(480px);
+    height: dividebyonethird(480px);
+    top: 3047px;
+    left: dividebyonethird(1440px);
+}
