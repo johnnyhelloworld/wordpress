@@ -5,13 +5,23 @@
 
     <div class="logos">
         <?php
-            echo '<div class="logoPartner1">' . getLogoPartner1('logoPartner1') . '</div>';
-            echo '<div class="logoPartner2">' . getLogoPartner2('logoPartner2') . '</div>';
-            echo '<div class="logoPartner3">' . getLogoPartner3('logoPartner3') . '</div>';
-            echo '<div class="logoPartner4">' . getLogoPartner4('logoPartner4') . '</div>';
-            echo '<div class="logoPartner5">' . getLogoPartner5('logoPartner5') . '</div>';
-            echo '<div class="logoPartner6">' . getLogoPartner6('logoPartner6') . '</div>';
+        function getPartnerLogo($setting_key) {
+            $image_url = get_theme_mod($setting_key);
+            if ($image_url) {
+                return '<img src="' . esc_url($image_url) . '" alt="' . $setting_key . '">';
+            } else {
+                return 'Logo not found'; // Display an error message if the URL is empty or invalid
+            }
+        }
+
+        echo '<div class="logoPartner1">' . getPartnerLogo('partner_logo_1') . '</div>';
+        echo '<div class="logoPartner2">' . getPartnerLogo('partner_logo_2') . '</div>';
+        echo '<div class="logoPartner3">' . getPartnerLogo('partner_logo_3') . '</div>';
+        echo '<div class="logoPartner4">' . getPartnerLogo('partner_logo_4') . '</div>';
+        echo '<div class="logoPartner5">' . getPartnerLogo('partner_logo_5') . '</div>';
+        echo '<div class="logoPartner6">' . getPartnerLogo('partner_logo_6') . '</div>';
         ?>
     </div>
+
 
 </article>

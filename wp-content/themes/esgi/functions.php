@@ -33,6 +33,60 @@ function esgi_enqueue_assets(){
 	wp_localize_script('main', 'esgi', $variables);
 }
 
+// Customizer de thème
+add_action('customize_register', 'esgi_customize_teams_register');
+function esgi_customize_teams_register($wp_customize) {
+	// section membres de l'équipe
+	$wp_customize->add_section('team_members_section', array(
+		'title' => __('Membres de l\'équipe', 'ESGI'),
+		'description' => __('Ajouter des photos pour les membres de l\'équipe', 'ESGI'),
+		'priority' => 160,
+	));
+
+	for ($i = 1; $i <= 4; $i++) {
+		$wp_customize->add_setting('team_member_' . $i, array(
+			'default' => '',
+			'sanitize_callback' => 'esc_url_raw',
+		));
+
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'team_member_' . $i, array(
+			'label' => __('Photo du membre ' . $i, 'ESGI'),
+			'section' => 'team_members_section',
+			'settings' => 'team_member_' . $i,
+		)));
+	}
+}
+
+add_action('customize_register', 'esgi_customize_partners_register');
+function esgi_customize_partners_register($wp_customize) {
+	$wp_customize->add_section('partner_logos_section', array(
+		'title' => __('Logos des partenaires', 'ESGI'),
+		'description' => __('Ajouter des logos pour les partenaires (limite à 6)', 'ESGI'),
+		'priority' => 160,
+	));
+
+	for ($i = 1; $i <= 6; $i++) {
+		$wp_customize->add_setting('partner_logo_' . $i, array(
+			'default' => '',
+			'sanitize_callback' => 'esc_url_raw',
+		));
+
+		$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'partner_logo_' . $i, array(
+			'label' => __('Logo du partenaire ' . $i, 'ESGI'),
+			'section' => 'partner_logos_section',
+			'settings' => 'partner_logo_' . $i,
+		)));
+	}
+}
+
+// Autoriser les fichiers SVG
+function add_svg_to_upload_mimes($upload_mimes) {
+	$upload_mimes['svg'] = 'image/svg+xml';
+	$upload_mimes['svgz'] = 'image/svg+xml';
+	return $upload_mimes;
+}
+add_filter('upload_mimes', 'add_svg_to_upload_mimes');
+
 function getFooterLogoESGI ($footerLogo){
 
     $footerLogo = '<svg width="210" height="63" viewBox="0 0 140 42" fill="none" xmlns="http://www.w3.org/2000/svg">
