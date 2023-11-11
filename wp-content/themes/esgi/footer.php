@@ -1,18 +1,21 @@
         <footer id="footer-id">	
-
-
 			<div class="footer-container">
-
 				<div class="footer-item">
-					<div class="container">
-						<div class="container-item">
-							<?= getFooterLogoESGI("footerLogo")?>
-						</div>
-
+					<div class="container">						
+						<?php if (is_404()) : ?>
+							<div class="container-item-error-page" id="error-page-footer-logo">
+								<?= getFooterLogoESGIErrorPage("footerLogo")?>
+							</div>
+							
+							<?php else : ?>
+								<div class="container-item">
+									<?= getFooterLogoESGI("footerLogo")?>
+								</div>
+							<?php endif; ?>
+								
 						<div class="container-item" id="text-bottom-left">
 							2022 Figma Template by ESGI
 						</div>
-
 					</div>
 				</div>
 
@@ -42,11 +45,7 @@
 						
 					</div>
 				</div>
-
-
 			</div>
-
- 
 		</footer>
 		<?php wp_footer(); ?>
 	</body>
