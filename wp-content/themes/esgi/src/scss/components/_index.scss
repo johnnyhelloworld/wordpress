@@ -1,0 +1,22 @@
+.intro {
+    h1 {
+        position: relative;
+        width: dividebyonethird(1191px);
+        height: 221px;
+        top: 211px;
+        left: 156px;
+        font-family: $font1;
+        font-size: dividebyonethird(84px);
+        line-height: 98px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    img {
+        position: absolute;
+        width: dividebyonethird(1487px);
+        height: 631px;
+        top: 659px;
+        left: dividebyonethird(433px);
+    }
+}

@@ -8728,7 +8728,6 @@ ul.custom-menu-list {
 }
 
 #footer-id {
-  visibility: hidden;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -8808,11 +8807,30 @@ ul.custom-menu-list {
   padding-left: 3rem;
 }
 
+.intro h1 {
+  position: relative;
+  width: 895.4887218045px;
+  height: 221px;
+  top: 211px;
+  left: 156px;
+  font-family: "Mulish", sans-serif;
+  font-size: 63.1578947368px;
+  line-height: 98px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.intro img {
+  position: absolute;
+  width: 1118.045112782px;
+  height: 631px;
+  top: 659px;
+  left: 325.5639097744px;
+}
+
 #about-us {
   max-width: 100%;
   height: 100%;
   background: white;
-  position: relative;
   margin: 0 auto;
 }
 #about-us h2 {
