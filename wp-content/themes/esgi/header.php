@@ -8,19 +8,24 @@
 
 	<body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-		<header id="site-header">
+    <?php
+        $headerId = is_404() ? 'site-header-error-page' : 'site-header';
+        $isErrorPageLogo = is_404() ? 'getLogoInWhite' : 'getLogo';
+        $isErrorPageMenu = is_404() ? 'getMenuErrorPage' : 'getMenu';
+    ?>
+        <header id="<?php echo esc_attr($headerId); ?>">
             <div class="container">
                 <div class="logo-container">
-                    <a href="#"><?= getLogo('logo') ?></a>
+                    <a href="#"><?= $isErrorPageLogo('logo') ?></a>
                 </div>
                 <div class="menu-container">
                     <div class="menu-button">
-                        <span><?= getMenu('menu') ?></span>
+                        <span><?= $isErrorPageMenu('menu') ?></span>
                     </div>
                     <?php if (has_nav_menu('primary_menu')) { 
                         echo '<nav class="main-menu">';
                         echo '<ul>';
-                        echo '<div class="logo-container">' . getLogoInWhite('logInWhite') . '</div>';
+                        echo '<div class="logo-container">' . getLogoInWhite('logo') . '</div>';
                         echo '<span class="close-element">' . getClose('close') . '</span>';
                         echo '<p>Or try Search</p>';
                         wp_nav_menu([
