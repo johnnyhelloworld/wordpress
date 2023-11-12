@@ -1,7 +1,15 @@
 <article id="about-us">
     <div class="about-us">
-        <h2>About Us</h2>
-        <p>Specializing in the creation of exceptional events for private and corporate clients, we design, plan and manage every project from conception to execution.</p>
+        <?php 
+        $current_page_id = get_the_ID();
+
+        if ($current_page_id === 2) {
+            echo '<h2 class="sky-the-limit">Sky’s the limit</h2>';
+        } else {
+            echo '<h2 >About Us</h2>';
+        }
+        echo '<p>Specializing in the creation of exceptional events for private and corporate clients, we design, plan and manage every project from conception to execution.</p>';
+        ?>
     </div>
 
     <div class="who-we-are">
