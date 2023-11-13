@@ -1,6 +1,6 @@
 <article id="our-services">
     <div class="our-services">
-        <h2>Our Services</h2>
+        <h2>Our Services.</h2>
         <?php
             $attachment_id = 29;
             echo '<div class="image12">';
