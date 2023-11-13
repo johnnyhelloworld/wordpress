@@ -13484,4 +13484,47 @@ ul.custom-menu-list {
   color: #8A8A8A;
 }
 
+.page-services #our-services h2 {
+  top: 212px;
+  left: 156px;
+}
+.page-services #our-services img {
+  top: 446px;
+}
+.page-services #our-services .private-parties p {
+  top: 575px;
+}
+
+.private_parties h2 {
+  position: absolute;
+  width: 361.6541353383px;
+  height: 79px;
+  top: 937px;
+  left: 155px;
+  font-family: "Mulish", sans-serif;
+  font-size: 47.3684210526px;
+  line-height: 74px;
+  letter-spacing: 3px;
+  text-align: left;
+}
+.private_parties p {
+  position: absolute;
+  width: 687.2180451128px;
+  height: 140px;
+  top: 1032px;
+  left: 158px;
+  font-family: "Mulish", sans-serif;
+  font-size: 19.5488721805px;
+  line-height: 42px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #8A8A8A;
+}
+.private_parties img {
+  position: absolute;
+  width: 1443.6090225564px;
+  height: 631px;
+  top: 1297px;
+}
+
 /*# sourceMappingURL=style.css.map */
