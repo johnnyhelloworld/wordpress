@@ -216,7 +216,7 @@ function getsearchLogo($searchLogo){
 
 function custom_search_form($form) {
 	$searchLogo = getsearchLogo('searchLogo');
-    $form = '<form role="search" method="get" id="searchform" action="searchPage" >
+    $form = '<form role="search" method="get" id="searchform" action="' . esc_url(home_url('/')) . '">
     <div>
         <label class="screen-reader-text" for="s">' . __('Search for:') . '</label>
         <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="Type something to search ..." />
@@ -242,6 +242,11 @@ function getLogoPartner1($partner1){
 
 	return $partner1;
 }
+
+function custom_excerpt_length($length) {
+    return 20;
+}
+add_filter('excerpt_length', 'custom_excerpt_length');
 
 function getLogoPartner2($partner2){
 	$partner2 = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>
