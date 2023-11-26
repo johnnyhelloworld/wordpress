@@ -5,9 +5,9 @@
 
 get_header();
 ?>
-<div class="Search-container">
+<div class="search-container">
     <div class="search-query">
-        <div class="search-title1"><?php _e( 'Search results for: ', 'esgi' ); echo get_search_query(); ?></br></br></div>
+        <h1 class="search-title1"><?php _e( 'Search results for: ', 'esgi' ); echo get_search_query(); ?></br></br></h1>
         <div class="container">
             <div class="row">
                 <div class="search-results-container">
